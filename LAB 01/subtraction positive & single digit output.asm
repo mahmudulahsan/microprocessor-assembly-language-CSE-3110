@@ -1,15 +1,15 @@
  .model small
  .stack 100h
  .data
-    A DW 2
-    B DW 3
+    A DW 7
+    B DW 4
     C DW ?
  MAIN PROC
     MOV AX, @data
     MOV DS, AX
     
     MOV AX, A  
-    ADD AX, B
+    SUB AX, B
     MOV C, AX
     ADD C, 48  
     
